@@ -1,0 +1,17 @@
+<div class="block pf_featured_users">
+	<div class="title">
+		Featured Users
+	</div>
+	<div class="content">
+		<div class="user_rows_mini">
+		{% for user in users %}
+			<div class="user_rows">
+				<div class="user_rows_image">
+					{{ user.photo_link }}
+				</div>
+				{{ user.name_link }}
+			</div>
+		{% endfor %}
+		</div>
+	</div>
+</div>

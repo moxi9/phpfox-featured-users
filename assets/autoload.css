@@ -1,0 +1,9 @@
+.pf_featured_users ._size__120,
+.pf_featured_users ._size__120:hover {
+  width: 100px;
+  height: 90px;
+}
+.pf_featured_users ._size__120 > span,
+.pf_featured_users ._size__120:hover > span {
+  top: 28px;
+}
