@@ -32,7 +32,7 @@ return function(Core\App\Object $App, Twig_Environment $View) {
 		}
 
 		$users = new Api\User();
-		$users->limit(6);
+		$users->limit(setting('pfu_total_to_feature', 6));
 		$users->where($cond);
 		$users->order('RAND()');
 

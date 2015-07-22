@@ -1,6 +1,12 @@
 {
 	"id": "PHPfox_FeaturedUsers",
 	"name": "PHPfox Featured Users",
-	"version": "1.0",
-	"icon": ""
+	"version": "1.1",
+	"icon": "//d2h79mkp7etn4r.cloudfront.net/icon/2015/07/1b08135d201f181416d072251f2f4f82.png",
+	"settings": {
+		"pfu_total_to_feature": {
+			"info": "How many featured users should show up?",
+			"value": "6"
+		}
+	}
 }
