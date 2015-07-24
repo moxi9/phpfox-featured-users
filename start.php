@@ -20,8 +20,9 @@ return function(Core\App\Object $App, Twig_Environment $View) {
 		$db = new Core\Db();
 		// $cache = new Core\Cache();
 
+		$limit = (int) setting('pfu_total_to_feature', 6);
 		$cond = [];
-		$featured = $db->select('*')->from(':user_featured')->all();
+		$featured = $db->select('*')->from(':user_featured')->limit($limit)->order('ordering DESC')->all();
 		if ($featured) {
 			$users = '';
 			foreach ($featured as $user) {
@@ -32,9 +33,9 @@ return function(Core\App\Object $App, Twig_Environment $View) {
 		}
 
 		$users = new Api\User();
-		$users->limit(setting('pfu_total_to_feature', 6));
+		// $users->limit(setting('pfu_total_to_feature', 6));
 		$users->where($cond);
-		$users->order('RAND()');
+		// $users->order('RAND()');
 
 		$object->block('core.index-member', 1, $View->render('@PHPfox_FeaturedUsers/block.html', [
 			'users' => $users->get()
