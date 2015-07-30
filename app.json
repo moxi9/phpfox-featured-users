@@ -1,12 +1,16 @@
 {
     "id": "PHPfox_FeaturedUsers",
     "name": "PHPfox Featured Users",
-    "version": 2.1,
-    "icon": "\/\/d2h79mkp7etn4r.cloudfront.net\/icon\/2015\/07\/1b08135d201f181416d072251f2f4f82.png",
+    "version": 2.2,
+    "icon": "\/\/d2h79mkp7etn4r.cloudfront.net\/icon\/2015\/07\/1f0c352efecf8d96b6f378f48203aaf5.png",
     "settings": {
         "pfu_total_to_feature": {
             "info": "How many featured users should show up?",
             "value": "6"
         }
+    },
+    "credits": {
+        "Freepik": "http:\/\/www.freepik.com",
+        "www.flaticon.com": "http:\/\/www.flaticon.com"
     }
 }
