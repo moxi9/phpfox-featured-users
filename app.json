@@ -1,7 +1,7 @@
 {
     "id": "PHPfox_FeaturedUsers",
     "name": "PHPfox Featured Users",
-    "version": 2.2,
+    "version": 2.3,
     "icon": "\/\/d2h79mkp7etn4r.cloudfront.net\/icon\/2015\/07\/1f0c352efecf8d96b6f378f48203aaf5.png",
     "settings": {
         "pfu_total_to_feature": {
